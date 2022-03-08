@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <me.twc.camerakit.CameraView
+        android:id="@+id/camera_kit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:ckFacing="back"
+        app:ckFlash="auto"
+        app:ckFocus="continuous"
+        app:ckPermissions="picture" />
+    <Button
+        android:id="@+id/btn_take"
+        android:text="拍照"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+</FrameLayout>
